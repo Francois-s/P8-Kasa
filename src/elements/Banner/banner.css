@@ -1,0 +1,42 @@
+.banner_home {
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../../img/banner-00.png);
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    height: 223px;
+    justify-content: center;
+    margin: 43px auto;
+    max-width: 95%;
+    padding: 20px;
+    position: relative;
+}
+
+.banner_about {
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../../img/banner-01.png);
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    height: 223px;
+    justify-content: center;
+    margin: 43px auto;
+    max-width: 95%;
+    padding: 20px;
+    position: relative;
+}
+
+.banner_p {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 68px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}

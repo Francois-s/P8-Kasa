@@ -1,0 +1,38 @@
+.card {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 340px;
+    transition: box-shadow .2s ease-in-out;
+    width: 30%;
+}
+
+.card_img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1s;
+}
+
+.card_img:hover {
+    transform: scale(1.1);
+}
+
+.card_infos {
+    bottom: 20px;
+    color: #fff;
+    font-size: clamp(12px, 3vw, 18px);
+    font-weight: 500;
+    left: 20px;
+    position: absolute;
+    right: 20px;
+    z-index: 20;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}

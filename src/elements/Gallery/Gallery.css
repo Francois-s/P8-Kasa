@@ -1,0 +1,12 @@
+.card_gallery {
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 50px;
+}

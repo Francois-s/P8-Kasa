@@ -1,0 +1,136 @@
+* {
+    color: #FF6060;
+
+}
+
+.info-page-container {
+    margin: 0 20px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 43px auto;
+}
+
+.carousel-image {
+    width: 100%;
+    object-fit: cover;
+    height: 415px;
+    border-radius: 25px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carousel-button-left {
+    left: 10px;
+}
+
+.carousel-button-right {
+    right: 10px;
+}
+
+.carousel-counter {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.info-title {
+    margin-top: 20px;
+    height: 51px;
+}
+
+.info-description {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.equipments-title {
+    margin: 20px 0;
+}
+
+.equipments-list {
+    list-style: none;
+    padding: 0;
+}
+
+.equipment-item {
+    margin-bottom: 10px;
+}
+
+.loading-text {
+    text-align: center;
+}
+
+.info-location {}
+
+.host-info {
+    display: flex;
+    align-items: center;
+}
+
+.host-names {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: right;
+
+}
+
+.host-name-part {
+    margin: 0;
+    font-size: 1em;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: right;
+}
+
+.host-picture {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}
+
+
+.list-tags {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.info-tags {
+    background-color: #FF6060;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.container-top {
+    display: flex;
+    justify-content: space-between;
+}

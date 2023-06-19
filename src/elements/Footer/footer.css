@@ -1,0 +1,25 @@
+.footer {
+    background-color: #000;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 209px;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer_logo {
+    height: 39px;
+    width: 122px;
+}
+
+.footer_text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
