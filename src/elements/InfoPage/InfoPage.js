@@ -30,7 +30,6 @@ const InfoPage = () => {
             {info ? (
                 <div>
                     <Header />
-                    {/* Carousel de images */}
                     <div className="carousel-container">
                         <img src={info.pictures[currentImageIndex]} alt={info.title} className="carousel-image" />
                         <button className="carousel-button carousel-button-left" onClick={handlePreviousImage}>
@@ -44,7 +43,6 @@ const InfoPage = () => {
                         </div>
                     </div>
 
-                    {/* Titre */}
                     <div className='container-top'>
                         <div>
                             <h1 className="info-title">{info.title}</h1>
@@ -55,7 +53,6 @@ const InfoPage = () => {
                                 ))}
                             </ul>
                         </div>
-                        {/* Hôte */}
                         <div className="host-info">
                             <div className="host-names">
                                 {info.host.name.split(" ").map((namePart, index) => (
@@ -66,12 +63,10 @@ const InfoPage = () => {
                         </div>
 
                     </div>
-                    {/* Description */}
                     <div>
                         <h3>Description</h3>
                         <p className="info-description">{info.description}</p>
                     </div>
-                    {/* Liste des équipements */}
                     <h3 className="equipments-title">Équipements:</h3>
                     <ul className="equipments-list">
                         {info.equipments.map((equipment, index) => (
