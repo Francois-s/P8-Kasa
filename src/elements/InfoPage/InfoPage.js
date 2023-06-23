@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer"
 import './infopage.css'
 import rightArrow from '../../img/right_arrow.png';
 import leftArrow from '../../img/left_arrow.png';
+import AccordionInfos from '../AccordionInfos/AccprdionInfos';
 
 const InfoPage = () => {
     const { id } = useParams();
@@ -63,16 +64,18 @@ const InfoPage = () => {
                         </div>
 
                     </div>
-                    <div>
-                        <h3>Description</h3>
-                        <p className="info-description">{info.description}</p>
+                    <div className='AccordionInfo-block'>
+                        <AccordionInfos
+                            title="Description"
+                            content={info.description}
+                        />
+                        <AccordionInfos
+                            title="Équipements"
+                            content={info.equipments.map((equipment, index) => (
+                                <li key={index} className="equipment-item">{equipment}</li>
+                            ))}
+                        />
                     </div>
-                    <h3 className="equipments-title">Équipements:</h3>
-                    <ul className="equipments-list">
-                        {info.equipments.map((equipment, index) => (
-                            <li key={index} className="equipment-item">{equipment}</li>
-                        ))}
-                    </ul>
                     <Footer />
                 </div>
             ) : (
