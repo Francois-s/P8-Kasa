@@ -52,3 +52,9 @@
 .expanded .accordion-arrow {
     transform: rotate(180deg);
 }
+
+@media  screen and (max-width:992px) {
+    .accordion-container {
+        max-width: 95%;
+    }
+}

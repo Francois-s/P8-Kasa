@@ -19,7 +19,13 @@
     gap: 57px;
     color: #FF6060;
     list-style-type: none;
-    font-size: clamp(12px, 2.5vw, 24px);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: right;
+
 }
 
 a {
@@ -31,4 +37,29 @@ body {
     max-width: 1440px;
     padding-top: 40px;
     margin: 0 auto;
+}
+
+@media screen and (max-width:992px) {
+    .logo {
+        width: 145px;
+        height: 47px;
+    }
+
+    .header {
+        max-width: 90%;
+    }
+
+    .nav_ul {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: right;
+
+    }
+
+    body {
+        padding-top: 20px;
+    }
 }

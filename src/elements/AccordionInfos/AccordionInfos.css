@@ -27,7 +27,7 @@
 
 .info-accordion-content {
     max-height: 0;
-    background: #fff;
+    background: #F6F6F6;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
     border-radius: 5px;
@@ -51,4 +51,14 @@
 
 .expanded .info-accordion-arrow {
     transform: rotate(180deg);
+}
+
+@media screen and (max-width:992px) {
+    .AccordionInfo-block {
+        display: block;
+    }
+
+    .info-accordion-container {
+        width: 100%;
+    }
 }

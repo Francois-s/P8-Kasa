@@ -3,3 +3,7 @@
     align-items: center;
     background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/banner-00.png) !important;
 }
+
+.home {
+    margin: 0 20px
+}

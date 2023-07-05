@@ -36,3 +36,14 @@
     text-align: left;
 
 }
+
+@media screen and (max-width: 992px) {
+    .card {
+        height: 255px;
+        width: 100%;
+    }
+
+    .card_img {
+        height: 255px;
+    }
+}
