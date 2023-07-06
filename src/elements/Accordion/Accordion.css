@@ -1,12 +1,12 @@
-.accordion-container {
-    max-width: 80%;
+/* The common styles */
+.accordion-container,
+.info-accordion-container {
     margin: 20px auto;
     font-family: 'Montserrat', sans-serif;
 }
 
-.accordion {}
-
-.accordion-title {
+.accordion-title,
+.info-accordion-title {
     padding-right: 17px;
     padding-left: 17px;
     cursor: pointer;
@@ -25,7 +25,8 @@
     text-align: left;
 }
 
-.accordion-content {
+.accordion-content,
+.info-accordion-content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
@@ -33,28 +34,55 @@
     border-radius: 5px;
     padding: 10px 20px 0px 20px;
     font-family: Montserrat;
+    text-align: left;
+}
+
+.accordion-arrow,
+.info-accordion-arrow {
+    transition: transform 0.5s ease-out;
+}
+
+.expanded .accordion-content,
+.expanded .info-accordion-content {
+    max-height: 400px;
+}
+
+.expanded .accordion-arrow,
+.expanded .info-accordion-arrow {
+    transform: rotate(180deg);
+}
+
+/* Styles specific to each route */
+.accordion-container {
+    max-width: 80%;
+}
+
+.info-accordion-container {
+    width: 48%;
+}
+
+.accordion-content {
     font-size: 24px;
     font-weight: 500;
     line-height: 34px;
     letter-spacing: 0em;
-    text-align: left;
     list-style: none;
 }
 
-.accordion-arrow {
-    transition: transform 0.5s ease-out;
-}
-
-.expanded .accordion-content {
-    max-height: 400px;
-}
-
-.expanded .accordion-arrow {
-    transform: rotate(180deg);
+.info-accordion-content {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0;
+    letter-spacing: 0em;
 }
 
 @media  screen and (max-width:992px) {
     .accordion-container {
         max-width: 95%;
+    }
+
+    .info-accordion-container {
+        width: 100%;
     }
 }

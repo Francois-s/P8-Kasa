@@ -1,22 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import infos from '../../Infos/infos';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Header from "../Header/header"
 import Footer from "../Footer/Footer"
 import './infopage.css'
 import rightArrow from '../../img/right_arrow.png';
 import leftArrow from '../../img/left_arrow.png';
-import AccordionInfos from '../AccordionInfos/AccprdionInfos';
+import Accordion from '../Accordion/Accordion';
 
 const InfoPage = () => {
     const { id } = useParams();
+    const navigate = useNavigate(); // Ajout de useNavigate
     const [info, setInfo] = useState(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
         const infoItem = infos.find((item) => item.id === id);
-        setInfo(infoItem);
-    }, [id]);
+        if (infoItem) { // Si l'info existe
+            setInfo(infoItem);
+        } else { // Si l'info n'existe pas, naviguer vers la page d'erreur
+            navigate('/error');
+        }
+    }, [id, navigate]); // Ajout de navigate à la liste des dépendances
 
     const handleNextImage = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % info.pictures.length);
@@ -65,11 +70,11 @@ const InfoPage = () => {
 
                     </div>
                     <div className='AccordionInfo-block'>
-                        <AccordionInfos
+                        <Accordion
                             title="Description"
                             content={info.description}
                         />
-                        <AccordionInfos
+                        <Accordion
                             title="Équipements"
                             content={info.equipments.map((equipment, index) => (
                                 <li key={index} className="equipment-item">{equipment}</li>

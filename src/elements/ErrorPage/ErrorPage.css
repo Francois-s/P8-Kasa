@@ -1,0 +1,24 @@
+.error-page-container {
+    text-align: center;
+    color: #FF6060;
+    padding-bottom: 40px;
+}
+
+.error-code {
+    font-size: 15em;
+    padding-top: 70px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.error-message {
+    font-size: 2em;
+    margin-bottom: 150px;
+}
+
+.error-link {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
