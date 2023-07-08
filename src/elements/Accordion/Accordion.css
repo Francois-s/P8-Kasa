@@ -17,7 +17,6 @@
     color: white;
     border-radius: 5px;
     margin: 0;
-    font-family: Montserrat;
     font-size: 24px;
     font-weight: 500;
     line-height: 34px;
@@ -33,7 +32,6 @@
     background: #F6F6F6;
     border-radius: 5px;
     padding: 10px 20px 0px 20px;
-    font-family: Montserrat;
     text-align: left;
 }
 

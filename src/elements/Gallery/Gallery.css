@@ -12,5 +12,7 @@
 }
 
 @media screen and (max-width: 992px) {
-    
+    .card_gallery {
+        padding: 0px;
+    }
 }
