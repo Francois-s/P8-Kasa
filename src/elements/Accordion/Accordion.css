@@ -9,6 +9,8 @@
 .info-accordion-title {
     padding-right: 17px;
     padding-left: 17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;

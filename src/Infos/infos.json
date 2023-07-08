@@ -1,4 +1,4 @@
-const infos = [
+[
 	{
 		"id": "c67ab8a7",
 		"title": "Appartement cosy",
@@ -617,5 +617,3 @@ const infos = [
 		]
 	}
 ]
-
-export default infos;

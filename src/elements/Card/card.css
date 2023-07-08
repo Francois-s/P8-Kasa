@@ -45,5 +45,6 @@
 
     .card_img {
         height: 255px;
+        width: 100%;
     }
 }
