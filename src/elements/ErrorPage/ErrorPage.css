@@ -22,3 +22,9 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 992px) {
+    .error-code {
+        font-size: 5em;
+    }
+}

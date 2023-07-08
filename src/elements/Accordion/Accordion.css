@@ -85,4 +85,8 @@
     .info-accordion-container {
         width: 100%;
     }
+
+    .AccordionInfo-block {
+        display: block;
+    }
 }

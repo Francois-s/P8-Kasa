@@ -51,8 +51,9 @@
 }
 
 .info-title {
-    margin-top: 20px;
+    margin-top: 0px;
     height: 51px;
+    margin-bottom: 0px;
 }
 
 .info-description {
@@ -84,11 +85,10 @@
     text-align: center;
 }
 
-.info-location {}
-
 .host-info {
     display: flex;
     align-items: center;
+    padding-left: 70px;
 }
 
 .host-names {
@@ -144,4 +144,76 @@
 .AccordionInfo-block {
     display: flex;
     justify-content: space-between;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+.star {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-image {
+        height: 335px;
+    }
+
+    .carousel-img-right {
+        height: 24px;
+    }
+
+    .carousel-img-left {
+        height: 24px;
+    }
+
+    .container-top {
+        display: block;
+    }
+
+    .container-bot {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .host-info {
+        padding-left: 0px;
+    }
+
+    .rating-container {
+        display: block;
+        padding-top: 12px;
+    }
+
+    .star {
+        margin-right: -5px;
+    }
+
+    .info-tags {
+        padding: 2px 10px 2px 10px;
+    }
+
+    .host-picture {
+        height: 42px;
+        width: 42px;
+    }
+
+    .info-location {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .info-title {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
 }
