@@ -1,0 +1,64 @@
+.info-accordion-container {
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+    width: 48%;
+}
+
+.info-accordion {}
+
+.info-accordion-title {
+    padding-right: 17px;
+    padding-left: 17px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF6060;
+    color: white;
+    border-radius: 5px;
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.info-accordion-content {
+    max-height: 0;
+    background: #F6F6F6;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    border-radius: 5px;
+    padding: 10px 20px 0px 20px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.info-accordion-arrow {
+    transition: transform 0.5s ease-out;
+}
+
+.expanded .info-accordion-content {
+    max-height: 400px;
+}
+
+.expanded .info-accordion-arrow {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width:992px) {
+    .AccordionInfo-block {
+        display: block;
+    }
+
+    .info-accordion-container {
+        width: 100%;
+    }
+}
